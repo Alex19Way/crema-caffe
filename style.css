@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #fefae0;
+    font-family: "Caveat", Arial, sans-serif;
+    font-weight: 600;
+}
+/*#fffce9*/
+a {text-decoration: none;}
+
+/*HEADER CSS-start*/
+.header{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border: solid 1px #283618;
+}
+    .header_logo{
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    margin: 0vh 2vw;
+    /*border: solid 2px black;*/
+        
+    }
+    .header_nav1{
+        display: flex; 
+        justify-content: flex-end;
+        align-items: center;
+        /*border: solid 1px green;*/
+    }
+        .header_nav1_items{
+            font-size: 28px;
+            color: #283618;
+            padding: 0px 8px;
+            margin-left: 2vw;
+            border-radius: 5px;
+            /*border: solid 1px blue;*/
+        }
+            .header_nav_items:hover{
+                color: darkcyan;
+            }
+    .header .current{
+        color: darkcyan;
+    }  
+    .header_nav2{
+        display: flex; 
+        align-items: center;
+        justify-content: flex-start;
+        /*border: solid 1px green;*/
+    }
+        .header_nav2_items{
+            font-size: 28px;
+            color: #283618;
+            padding: 0px 8px;
+            margin-right: 2vw;
+            border-radius: 5px;
+            /* border: solid 1px blue;*/
+        }
+    .header_icon_bar{
+        float: right;
+        padding: 45px 40px 0px 20px;
+        display: none;
+    }
+        .header_icon_bar span{
+            display: block;
+            height: 3px;
+            width: 30px;
+            background-color: #283618;
+            margin-bottom: 5px;
+        }
+
+/*HEADER CSS-end*/
+
+/*HEADER CSS-start RESPONSIVE*/
+@media only screen and (max-width:767px){
+.header{
+    height: 110px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header_logo{
+    content: url(imm/logo/logo-mobile.png);
+    width: 200px;
+    height: 110px;
+    margin-top: 1vw;
+}
+.header_icon_bar{
+    display: inline-block;
+}
+
+.header_nav1, .header_nav2{
+    display: block;
+    order: 2;
+    display: none;
+}
+
+}
+/*HEADER CSS-end RESPONSIVE*/
+
+/*COVER CSS-start*/
+.cover{
+    background-image: url(imm/cover/caffe4-normale.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    border: solid 2px red;
+}
+    .cover_caption{
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+    .cover_copy{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+
+
+
+/*COVER CSS-end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  * html .clearfix             { zoom: 1; } /* IE6 */
+  *:first-child+html .clearfix { zoom: 1; } /* IE7 */
