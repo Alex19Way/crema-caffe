@@ -1,7 +1,4 @@
-
-/*#fffce9*/
 a {text-decoration: none;}
-
 /*HEADER CSS-start*/
 .header{
     font-family: "Caveat", Arial, sans-serif;
@@ -18,13 +15,11 @@ a {text-decoration: none;}
     width: 180px;
     height: 130px;
     margin: 0vh 2vw;
-        
     }
     .header_nav1{
         display: flex; 
         justify-content: flex-end;
         align-items: center;
-        /*border: solid 1px green;*/
     }
         .header_nav1_items{
             font-size: 28px;
@@ -32,15 +27,9 @@ a {text-decoration: none;}
             padding: 0px 8px;
             margin-left: 2vw;
             border-radius: 5px;
-            /*border: solid 1px blue;*/
         }
-            .header_nav1_items:hover,
-            .header_nav2_items:hover{
-                color: darkcyan;
-            }
-    .header .current{
-        color: darkcyan;
-    }  
+            .header_nav1_items:hover,.header_nav2_items:hover{color: darkcyan;}
+    .header .current{color: darkcyan;}  
     .header_nav2{
         display: flex; 
         align-items: center;
@@ -67,38 +56,8 @@ a {text-decoration: none;}
             background-color: #283618;
             margin-bottom: 5px;
         }
-
 /*HEADER CSS-end*/
-
-/*HEADER CSS-start RESPONSIVE*/
-@media only screen and (max-width:767px){
-.header{
-    height: 110px;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.header_logo{
-    content: url(imm/logo/logo-mobile.png);
-    width: 200px;
-    height: 110px;
-    margin-top: 1vw;
-}
-.header_icon_bar{
-    display: inline-block;
-}
-
-.header_nav1, .header_nav2{
-    display: block;
-    order: 2;
-    display: none;
-}
-
-}
-/*HEADER CSS-end RESPONSIVE*/
-
 /*COVER CSS-start*/
-
 .cover{
     font-family: "Style Script",Arial, sans-serif;
     width: 100%;
@@ -120,16 +79,36 @@ a {text-decoration: none;}
     }
     .cover_text h1{font-size: 160px; }
     .cover_text h2{font-size: 100px;}
-
-    
-    
-    
-
-
-
-
 /*COVER CSS-end*/
 
+/*----RESPONSIVE----*/
+/*HEADER CSS-start RESPONSIVE*/
+@media only screen and (max-width:767px){
+    .header{
+        height: 110px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .header_logo{
+        content: url(imm/logo/logo-mobile.png);
+        width: 200px;
+        height: 110px;
+        margin-top: 1vw;
+    }
+    .header_icon_bar{display: inline-block;}
+    .header_nav1, .header_nav2{
+        display: block;
+        order: 2;
+        display: none;
+    }
+    /*HEADER CSS-end RESPONSIVE*/
+    /*COVER CSS-start RESPONSIVE*/
+    .cover{height: 60vh;background-position: center; }
+        .cover_text{height: 60vh; }
+        .cover_text h1{font-size: 120px;}
+        .cover_text h2{font-size: 60px;}
+    /*COVER CSS-end RESPONSIVE*/
+}
 
 
 
@@ -146,18 +125,3 @@ a {text-decoration: none;}
 
 
 
-
-
-
-
-
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-  }
-  * html .clearfix             { zoom: 1; } /* IE6 */
-  *:first-child+html .clearfix { zoom: 1; } /* IE7 */
