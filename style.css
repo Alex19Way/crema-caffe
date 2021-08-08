@@ -189,6 +189,7 @@ body{
         .cover_text{height: 60vh; }
         .cover_text h1{font-size: 120px;}
         .cover_text h2{font-size: 60px;}
+    }
     /*COVER CSS-end RESPONSIVE*/
     /*SEZIONE1 start RESPONSIVE*/
     @media screen and (max-width: 1187px){
@@ -255,7 +256,7 @@ body{
             }
     }
     /*SEZIONE1 end RESPONSIVE*/
-}
+
 
 
 
