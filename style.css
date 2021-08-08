@@ -150,13 +150,13 @@ body{
 @media screen and (max-width: 840px){
     .sezione1_text img{width: 180px; height: 38px;}
     .sezione1_text h2{font-size: 60px;}
-    .sezione1_text p{font-size: 20px;}
+    .sezione1_text p{font-size: 24px;}
     
     .sezione1_grid{
         margin-top: 40px;
         grid-template-columns: 40px 1fr;
         grid-template-rows: repeat(12,30px);
-        grid-row-gap: 15px;
+        grid-row-gap: 25px;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -192,8 +192,9 @@ body{
             margin-top: 10px;
         }
         .sezione1_grid p{
-            font-size: 20px;
+            font-size: 18px;
             margin-left: 60px;
+            margin-top: -10px;
         }
         .sezione1_grid_img{
             width: 40px;
@@ -234,7 +235,7 @@ body{
     }
     /*HEADER CSS-end RESPONSIVE*/
     /*COVER CSS-start RESPONSIVE*/
-    .cover{height: 60vh;background-position: center; }
+    .cover{height: 60vh;background-position: center;width: 100%; }
         .cover_text{height: 60vh; }
         .cover_text h1{font-size: 120px;}
         .cover_text h2{font-size: 60px;}
