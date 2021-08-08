@@ -149,12 +149,13 @@ body{
 @media screen and (max-width: 840px){
     .sezione1_text img{width: 180px; height: 38px;}
     .sezione1_text h2{font-size: 60px;}
+    .sezione1_text p{font-size: 20px;}
     
     .sezione1_grid{
         margin-top: 40px;
         grid-template-columns: 40px 1fr;
         grid-template-rows: repeat(12,30px);
-        grid-row-gap: 30px;
+        grid-row-gap: 15px;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -185,13 +186,17 @@ body{
         #img-6{grid-column: 1/2;grid-row: 11/13;}
 
         .sezione1_grid h3{
+            font-size: 30px;
             margin-left: 60px;
             margin-top: 10px;
         }
         .sezione1_grid p{
+            font-size: 20px;
             margin-left: 60px;
         }
         .sezione1_grid_img{
+            width: 40px;
+            height: 40px;
             margin-left: 50px;
         }
 }
