@@ -3,6 +3,8 @@ body{
     background-color: #fefae0;
     font-family: "Caveat", Arial, sans-serif;
 }
+*{-webkit-tap-highlight-color: transparent;}
+*:focus {outline: none;}
 /*HEADER CSS-start*/
 .header{
     width: 100%;
